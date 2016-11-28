@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+    <link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/styles-new.css"/>
+</head>
+<body>
+
+<header>
+    <nav id='cssmenu'>
+        <div class="logo"><a href="index2.html"><img src="assets/logo/logoE.svg" alt="ElliMae Logo"></a></div>
+        <div id="head-mobile"></div>
+        <div class="button"></div>
+        <ul id="nav">
+            <li><a href="#" class="active"> ENCOMPASS</a></li>
+            <li><a href="#"> SUPPORT & SERVICES</a></li>
+            <li><a href="#"> CLIENTS </a></li>
+            <li><a href="#"> RESOURCES</a></li>
+            <li><a href="#">COMPANY</a></li>
+        </ul>
+    </nav>
+</header>
+<div class="container">
+
+    <section class="features">
+        <article class="feature_webinar left">
+            <h1>FEATURED WEBINAR</h1>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing <br/>
+                elit, sed do incididunt ut labore etdolore magna laboris nisi<br/>
+                aliqua. Ut enim ad minim veniam, quis laboris nisilabor<br/>
+                nostrud exercitation ullamco laboris nisilaboris nisi
+            </p><br />
+            <button id="watch1">WATCH</button>
+        </article>
+        <article class="feature_testimonial right">
+            <h1>FEATURED TESTIMONIAL</h1>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing <br/>
+                elit, sed do incididunt ut labore etdolore magna laboris nisi<br/>
+                aliqua. Ut enim ad minim veniam, quis laboris nisilabor<br/>
+                nostrud exercitation ullamco laboris nisilaboris nisi
+
+            </p><br />
+            <button id="watch2">WATCH</button>
+        </article>
+    </section>
+
+
+    <section class="resources">
+        <h6 class="resources-header">RESOURCES</h6>
+        <section class="items">
+            <ul class="icons">
+                <li>
+                    <span class="item-header">ENCOMPASS</span><br/>
+                    <i class="fa fa-users fa-2x circle-icon"></i>
+                </li>
+                <li>
+                    <span class="item-header">PURPOSE</span><br/>
+                    <i class="fa fa-home fa-2x circle-icon"></i>
+                </li>
+                <li>
+                    <span class="item-header">O.I.R</span><br/>
+                    <i class="fa fa-money fa-2x circle-icon"></i>
+                </li>
+                <li>
+                    <span class="item-header">ETC</span><br/>
+                    <i class="fa fa-home fa-2x circle-icon"></i>
+                </li>
+                <li>
+                    <span class="item-header">ETC</span><br/>
+                    <i class="fa fa-bar-chart fa-2x circle-icon"></i>
+                </li>
+                <li>
+                    <span class="item-header">ETC</span><br/>
+                    <i class="fa fa-clock-o fa-2x circle-icon"></i>
+                </li>
+                <li>
+                    <span class="item-header">ETC</span><br/>
+                    <i class="fa fa-bar-chart fa-2x circle-icon"></i>
+                </li>
+                <li>
+                    <span class="item-header">ETC</span><br/>
+                    <i class="fa fa-address-book fa-2x circle-icon"></i>
+                </li>
+                <li>
+                    <span class="item-header">ETC</span><br/>
+                    <i class="fa fa-bank fa-2x circle-icon"></i>
+                </li>
+            </ul>
+        </section>
+        <section class="items pointers">
+            <ul id="current-list">
+                <li class="item-selection">
+                    <i class="fa fa-4x fa-caret-down "></i>
+                </li>
+                <li class="item-selection">
+                    <i class="fa fa-4x fa-caret-down "></i>
+                </li>
+                <li class="item-selection">
+                    <i class="fa fa-4x fa-caret-down "></i>
+                </li>
+                <li class="item-selection">
+                    <i class="fa fa-4x fa-caret-down "></i>
+                </li>
+                <li class="item-selection">
+                    <i class="fa fa-4x fa-caret-down "></i>
+                </li>
+                <li class="item-selection">
+                    <i class="fa fa-4x fa-caret-down "></i>
+                </li>
+                <li class="item-selection">
+                    <i class="fa fa-4x fa-caret-down "></i>
+                </li>
+                <li class="item-selection">
+                    <i class="fa fa-4x fa-caret-down "></i>
+                </li>
+                <li class="item-selection">
+                    <i class="fa fa-4x fa-caret-down "></i>
+                </li>
+
+            </ul>
+
+        </section>
+        <section class="item-description">
+
+            <article class="item-details left">
+                <h1>Minimize Costs and Maximize ROI</h1>
+                <p>
+                    More than 80,000 mortgage professionals
+                    trusts mortgage professionals mortgage
+                    mortgage professionals/n
+                </p>
+            </article>
+            <article class="item-stats right">
+                <h1>Smart Graph</h1>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing <br/>
+                    elit, sed do incididunt ut labore etdolore magna laboris nisi<br/>
+                    aliqua. Ut enim ad minim veniam, quis laboris nisilabor<br/>
+                    nostrud exercitation ullamco laboris nisilaboris nisi
+
+                </p>
+            </article>
+
+        </section>
+
+    </section>
+
+</div>
+
+<footer>
+
+</footer>
+
+<script src="js/jquery-3.1.1.min.js"></script>
+<script>
+
+    $(document).ready(function() {
+
+        $('section.pointers ul li i').css('display', 'none');
+        $('section.pointers ul li:first-child i').css('display', 'inherit');
+
+        $('section.items ul.icons li').click(function() {
+           console.log(this);
+            var index = $('section.items ul.icons li').index(this);
+            $('section.pointers ul li i').css('display', 'none');
+            index++;
+            var selector = 'section.pointers ul li:nth-child('+index+') i';
+            $(selector).css('display', 'inherit');
+        });
+
+        var settings = $.extend({
+            format: "dropdown",
+            sticky: false
+        });
+
+        $(".button").on('click', function(){
+            $(this).toggleClass('menu-opened');
+            var mainmenu = $(this).next('ul');
+            if (mainmenu.hasClass('open')) {
+                mainmenu.slideToggle().removeClass('open');
+            }
+            else {
+                mainmenu.slideToggle().addClass('open');
+                if (settings.format === "dropdown") {
+                    mainmenu.find('ul').show();
+                }
+            }
+        });
+
+    });
+
+</script>
+
+</body>
+</html>
